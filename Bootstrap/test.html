@@ -1,0 +1,32 @@
+<!doctype html5>
+
+<html>
+	<head>
+		<!-- <meta http-equiv="refresh" content="10"> -->
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<
+	</head>
+	<body>
+		
+ 	 	<script type="text/javascript">
+		 	 var player;
+
+		    function onYouTubeIframeAPIReady() {
+		        player = new YT.Player('ytplayer', {
+		            events: {
+		                'onReady': onPlayerReady
+		            }
+		        });
+		    }
+
+		    function onPlayerReady(event) {
+		        player.mute();
+		        player.playVideo();
+		    }
+ 	 	</script>
+		<div class="video" muted>
+  			<iframe class="video" src="https://www.youtube.com/embed/kqUR3KtWbTk?autoplay=1&enablejsapi=1&controls=0&showinfo=0&loop=1&showinfo=0"></iframe>
+ 	 	</div>
+		
+	</body>
+</html>
