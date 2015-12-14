@@ -1,0 +1,267 @@
+/* line 1, ../scss/base/_base.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 1, ../scss/layout/_header.scss */
+#header {
+  transition: height 350ms;
+}
+
+/* line 5, ../scss/layout/_header.scss */
+.header-menu {
+  color: white;
+  top: 0px;
+  position: relative;
+  transition: top 350ms;
+}
+
+/* line 13, ../scss/layout/_header.scss */
+.bottom-header-bar {
+  background-color: red;
+  height: 12px;
+  top: 0px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  position: relative;
+  transition: height 550ms;
+  transition: top 350ms;
+}
+
+/* line 1, ../scss/layout/_footer.scss */
+footer {
+  color: #f7f7f7;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background-color: #d1e0e0;
+  height: 150px;
+}
+
+/* line 1, ../scss/modules/_navbar.scss */
+.navbar {
+  height: 60px;
+  transition: height 0.4s;
+}
+
+/* line 6, ../scss/modules/_navbar.scss */
+#header:hover {
+  height: 100px;
+}
+
+/* line 6, ../scss/modules/_navbar.scss */
+#header:hover #sectionMenu {
+  line-height: 100px;
+}
+
+/* line 7, ../scss/modules/_navbar.scss */
+#header:hover hgroup {
+  line-height: 100px;
+}
+
+/* line 8, ../scss/modules/_navbar.scss */
+#header:hover h1 a {
+  height: 100px;
+}
+
+/* line 9, ../scss/modules/_navbar.scss */
+#header:hover .bottom-header-bar {
+  height: 5px;
+}
+
+/* line 11, ../scss/modules/_navbar.scss */
+.navbar:hover {
+  height: 100px;
+}
+/* line 14, ../scss/modules/_navbar.scss */
+.navbar:hover .bottom-header-bar {
+  height: 5px;
+  top: 48px;
+}
+/* line 19, ../scss/modules/_navbar.scss */
+.navbar:hover .header-menu {
+  top: 27px;
+}
+
+/* line 1, ../scss/modules/_buttons.scss */
+.social-buttons li {
+  display: inline;
+  list-style-type: none;
+}
+
+/* line 6, ../scss/modules/_buttons.scss */
+.btn {
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0 auto 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  /* line 6, ../scss/modules/_buttons.scss */
+  .btn {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  /* line 23, ../scss/modules/_buttons.scss */
+  .btn:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  /* line 30, ../scss/modules/_buttons.scss */
+  .btn:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  /* line 34, ../scss/modules/_buttons.scss */
+  .btn:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+/* line 40, ../scss/modules/_buttons.scss */
+.btn:hover {
+  text-decoration: none;
+}
+
+/* line 44, ../scss/modules/_buttons.scss */
+svg {
+  height: 107%;
+  left: -2px;
+  position: absolute;
+  top: -2px;
+  width: 102%;
+}
+
+/* line 52, ../scss/modules/_buttons.scss */
+.btn-1 {
+  background: #d2dfdf;
+  font-weight: bold;
+}
+/* line 56, ../scss/modules/_buttons.scss */
+.btn-1 rect {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  stroke-dasharray: 422, 0;
+}
+
+/* line 64, ../scss/modules/_buttons.scss */
+.btn-1:hover {
+  background: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+/* line 69, ../scss/modules/_buttons.scss */
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* line 13, ../scss/styles.scss */
+h1 {
+  font-size: 50pt;
+  color: #d9d9d9;
+  text-shadow: 2px 2px #000;
+}
+
+/* line 19, ../scss/styles.scss */
+h3 {
+  font-weight: bold;
+}
+
+/* line 23, ../scss/styles.scss */
+.about-picture {
+  border-radius: 50%;
+}
+
+/* line 27, ../scss/styles.scss */
+.about-text {
+  font-size: 12pt;
+}
+
+/* line 31, ../scss/styles.scss */
+#home {
+  height: 855px;
+  display: block;
+  background-color: lightblue;
+  background: url("http://www.applebulgaria.com/wp-content/uploads/2015/11/home-office-furniture-contemporary.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  position: relative;
+}
+
+/* line 43, ../scss/styles.scss */
+#about {
+  height: 855px;
+  display: block;
+  background-color: #99ff99;
+  background: url("https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+/* line 54, ../scss/styles.scss */
+#portfolio {
+  height: 855px;
+  background: url("http://7-themes.com/data_images/out/8/6793522-free-office-wallpaper.jpg") no-repeat center center fixed;
+}
+
+/* line 59, ../scss/styles.scss */
+#contact {
+  height: 855px;
+  background: url("https://41.media.tumblr.com/92e61775d4c3edcc5145936e3703d125/tumblr_nt5uo9fH9y1ud7rr3o1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 67, ../scss/styles.scss */
+hr {
+  border: 1px outset rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+/* line 75, ../scss/styles.scss */
+.portfolio-overlay {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 20%;
+}
+
+/* line 81, ../scss/styles.scss */
+.thumbnail {
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+/* line 88, ../scss/styles.scss */
+.caption {
+  background-color: #333;
+}
+
+/* line 92, ../scss/styles.scss */
+.caption h4, h5 {
+  color: white;
+}
+
+/* line 96, ../scss/styles.scss */
+.caption h5 {
+  font-style: italic;
+}

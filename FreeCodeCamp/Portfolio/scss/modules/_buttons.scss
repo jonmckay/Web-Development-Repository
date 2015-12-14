@@ -1,0 +1,75 @@
+.social-buttons li {
+    display: inline;
+    list-style-type: none;
+}
+
+.btn {
+  color: black;
+  cursor: pointer;
+  font-size:15px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0 auto 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%; 
+  
+  @media(min-width: 400px) {
+    display: inline-block;
+    margin-right: 2.5em;
+  
+    &:nth-of-type(even) {
+      margin-right: 0;
+    }
+  }
+  
+  @media(min-width: 600px) {
+  
+    &:nth-of-type(even) {
+      margin-right: 2.5em;
+    }
+    
+    &:nth-of-type(5) {
+      margin-right: 0;
+    }
+    
+  }
+  
+  &:hover { text-decoration: none; }
+  
+}
+
+svg {
+    height: 107%;
+    left: -2px;
+    position: absolute;
+    top: -2px; 
+    width: 102%; 
+  }
+
+.btn-1 {
+  background: #d2dfdf;
+  font-weight: bold;
+  
+  rect {
+    fill: none;
+    stroke: black;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+  }
+}
+
+.btn-1:hover {
+  background: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+  
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}

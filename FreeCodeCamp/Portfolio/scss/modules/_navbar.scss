@@ -1,0 +1,22 @@
+.navbar {
+  height: 60px;
+  transition:height 0.4s;
+}
+
+#header:hover{height:100px;}#header:hover #sectionMenu{line-height:100px;}
+#header:hover hgroup{line-height:100px;}
+#header:hover h1 a{height:100px;}
+#header:hover .bottom-header-bar{height:5px;}
+
+.navbar:hover {
+  height: 100px;
+  
+  .bottom-header-bar {
+    height: 5px;
+    top: 48px;
+  }
+
+  .header-menu {
+  	top: 27px;
+  }
+}

@@ -1,0 +1,99 @@
+@import 'base/_variables.scss';
+@import 'base/_reset.scss';
+@import 'base/_base.scss';
+
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+
+@import 'modules/_navbar.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_components.scss';
+
+
+h1 {
+  font-size: 50pt;
+  color: #d9d9d9;
+  text-shadow: 2px 2px #000;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.about-picture {
+  border-radius: 50%;
+}
+
+.about-text {
+  font-size: 12pt;
+}
+
+#home {
+  height: 855px;
+  display: block;
+  background-color: lightblue;
+  background: url('http://www.applebulgaria.com/wp-content/uploads/2015/11/home-office-furniture-contemporary.jpg') no-repeat center center fixed;
+  background-size: cover;
+     text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  position: relative;
+}
+
+#about {
+  height: 855px;
+  display: block;
+  background-color: #99ff99;
+  background: url('https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+#portfolio {
+  height: 855px;
+  background: url('http://7-themes.com/data_images/out/8/6793522-free-office-wallpaper.jpg') no-repeat center center fixed;
+}
+
+#contact {
+  height: 855px;
+  background: url('https://41.media.tumblr.com/92e61775d4c3edcc5145936e3703d125/tumblr_nt5uo9fH9y1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  //background: linear-gradient(135deg, rgba(85, 239, 203, 1) 0%, rgba(30, 87, 153, 1) 0%, rgba(85, 239, 203, 1) 0%, rgba(91, 202, 255, 1) 100%);
+  //height: 855px;
+}
+
+hr {
+  border: 1px outset rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+
+
+.portfolio-overlay {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 20%;
+}
+
+.thumbnail {
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.caption {
+  background-color: #333;
+}
+
+.caption h4, h5 {
+  color: white;
+}
+
+.caption h5 {
+  font-style: italic;
+}
+
