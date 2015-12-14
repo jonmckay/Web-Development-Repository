@@ -1,24 +1,27 @@
 #header {
-    transition:height 350ms;
+    transition:height 300ms;
 }
+
 
 .header-menu {
     //font-family: "Open Sans", serif;
     color: $white;
+    font-weight: bold;
 	top: 0px;
 	position: relative;
 	transition:top 350ms;
 }
 
+
 .bottom-header-bar {
-  background-color: red;
+  background-color: $secondary-menu-color;
   height: 12px;
-  top: 0px;
+  top: 10px;
   padding: 0;
   border: 0;
   outline: 0;
   vertical-align: baseline;
   position: relative;
-  transition:height 550ms;
+  transition:height 350ms;
   transition:top 350ms; //0.35s;
 }

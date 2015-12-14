@@ -6,30 +6,50 @@ html, body {
   margin: 0px;
 }
 
-/* line 1, ../scss/layout/_header.scss */
-#header {
-  transition: height 350ms;
+/* line 8, ../scss/base/_base.scss */
+h1 {
+  font-size: 50pt;
+  color: #d9d9d9;
+  text-shadow: 2px 2px #000;
 }
 
-/* line 5, ../scss/layout/_header.scss */
+/* line 14, ../scss/base/_base.scss */
+h3 {
+  font-weight: bold;
+}
+
+/* line 18, ../scss/base/_base.scss */
+hr {
+  border: 1px outset rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+/* line 1, ../scss/layout/_header.scss */
+#header {
+  transition: height 300ms;
+}
+
+/* line 6, ../scss/layout/_header.scss */
 .header-menu {
   color: white;
+  font-weight: bold;
   top: 0px;
   position: relative;
   transition: top 350ms;
 }
 
-/* line 13, ../scss/layout/_header.scss */
+/* line 16, ../scss/layout/_header.scss */
 .bottom-header-bar {
-  background-color: red;
+  background-color: #ff4d4d;
   height: 12px;
-  top: 0px;
+  top: 10px;
   padding: 0;
   border: 0;
   outline: 0;
   vertical-align: baseline;
   position: relative;
-  transition: height 550ms;
+  transition: height 350ms;
   transition: top 350ms;
 }
 
@@ -39,13 +59,72 @@ footer {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   background-color: #d1e0e0;
-  height: 150px;
+  height: 15px;
+}
+
+/* line 9, ../scss/layout/_footer.scss */
+.footer .navbar {
+  height: 15px;
+}
+
+/* line 1, ../scss/layout/_home.scss */
+#home {
+  height: 100%vh;
+  display: block;
+  background-color: #eaeaea;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  position: relative;
+}
+
+/* line 1, ../scss/layout/_about.scss */
+#about {
+  height: 855px;
+  display: block;
+  background-color: #99ff99;
+  background: url("https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+/* line 13, ../scss/layout/_about.scss */
+.about-picture {
+  border-radius: 50%;
+}
+
+/* line 18, ../scss/layout/_about.scss */
+.about-text {
+  font-size: 12pt;
+}
+
+/* line 1, ../scss/layout/_portfolio.scss */
+#portfolio {
+  height: 855px;
+  background: url("http://7-themes.com/data_images/out/8/6793522-free-office-wallpaper.jpg") no-repeat center center fixed;
+}
+
+/* line 6, ../scss/layout/_portfolio.scss */
+.portfolio-overlay {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 20%;
+}
+
+/* line 2, ../scss/layout/_contact.scss */
+#contact {
+  height: 855px;
+  background: url("https://41.media.tumblr.com/92e61775d4c3edcc5145936e3703d125/tumblr_nt5uo9fH9y1ud7rr3o1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* line 1, ../scss/modules/_navbar.scss */
-.navbar {
+.header .navbar {
   height: 60px;
-  transition: height 0.4s;
+  transition: height 0.3s;
 }
 
 /* line 6, ../scss/modules/_navbar.scss */
@@ -74,16 +153,21 @@ footer {
 }
 
 /* line 11, ../scss/modules/_navbar.scss */
-.navbar:hover {
+.header .navbar:hover {
   height: 100px;
 }
 /* line 14, ../scss/modules/_navbar.scss */
-.navbar:hover .bottom-header-bar {
+.header .navbar:hover .bottom-header-bar {
   height: 5px;
   top: 48px;
 }
-/* line 19, ../scss/modules/_navbar.scss */
-.navbar:hover .header-menu {
+/* line 18, ../scss/modules/_navbar.scss */
+.header .navbar:hover:after {
+  transition: height 0.2s;
+  height: 60px;
+}
+/* line 23, ../scss/modules/_navbar.scss */
+.header .navbar:hover .header-menu {
   top: 27px;
 }
 
@@ -167,101 +251,4 @@ svg {
   stroke-dasharray: 15, 310;
   stroke-dashoffset: 48;
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-/* line 13, ../scss/styles.scss */
-h1 {
-  font-size: 50pt;
-  color: #d9d9d9;
-  text-shadow: 2px 2px #000;
-}
-
-/* line 19, ../scss/styles.scss */
-h3 {
-  font-weight: bold;
-}
-
-/* line 23, ../scss/styles.scss */
-.about-picture {
-  border-radius: 50%;
-}
-
-/* line 27, ../scss/styles.scss */
-.about-text {
-  font-size: 12pt;
-}
-
-/* line 31, ../scss/styles.scss */
-#home {
-  height: 855px;
-  display: block;
-  background-color: lightblue;
-  background: url("http://www.applebulgaria.com/wp-content/uploads/2015/11/home-office-furniture-contemporary.jpg") no-repeat center center fixed;
-  background-size: cover;
-  text-align: center;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  position: relative;
-}
-
-/* line 43, ../scss/styles.scss */
-#about {
-  height: 855px;
-  display: block;
-  background-color: #99ff99;
-  background: url("https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg") no-repeat center center fixed;
-  background-size: cover;
-  text-align: center;
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-
-/* line 54, ../scss/styles.scss */
-#portfolio {
-  height: 855px;
-  background: url("http://7-themes.com/data_images/out/8/6793522-free-office-wallpaper.jpg") no-repeat center center fixed;
-}
-
-/* line 59, ../scss/styles.scss */
-#contact {
-  height: 855px;
-  background: url("https://41.media.tumblr.com/92e61775d4c3edcc5145936e3703d125/tumblr_nt5uo9fH9y1ud7rr3o1_1280.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-
-/* line 67, ../scss/styles.scss */
-hr {
-  border: 1px outset rgba(255, 255, 255, 0.2);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-  width: 100%;
-}
-
-/* line 75, ../scss/styles.scss */
-.portfolio-overlay {
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 20%;
-}
-
-/* line 81, ../scss/styles.scss */
-.thumbnail {
-  background-color: transparent;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-}
-
-/* line 88, ../scss/styles.scss */
-.caption {
-  background-color: #333;
-}
-
-/* line 92, ../scss/styles.scss */
-.caption h4, h5 {
-  color: white;
-}
-
-/* line 96, ../scss/styles.scss */
-.caption h5 {
-  font-style: italic;
 }
