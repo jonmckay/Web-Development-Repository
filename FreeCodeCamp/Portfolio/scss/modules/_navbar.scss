@@ -10,16 +10,11 @@
 
 .header .navbar:hover {
   height: 100px;
-  
+
   .bottom-header-bar {
     height: 5px;
     top: 48px;
   }
-  &:after {
-  	  transition:height 0.2s;
-  	  height: 60px;
-  }
-
   .header-menu {
   	top: 27px;
   }

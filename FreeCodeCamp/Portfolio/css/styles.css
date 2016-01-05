@@ -4,21 +4,22 @@ html, body {
   width: 100%;
   padding: 0px;
   margin: 0px;
+  overflow-y: hidden;
 }
 
-/* line 8, ../scss/base/_base.scss */
+/* line 9, ../scss/base/_base.scss */
 h1 {
   font-size: 50pt;
   color: #d9d9d9;
   text-shadow: 2px 2px #000;
 }
 
-/* line 14, ../scss/base/_base.scss */
+/* line 15, ../scss/base/_base.scss */
 h3 {
   font-weight: bold;
 }
 
-/* line 18, ../scss/base/_base.scss */
+/* line 19, ../scss/base/_base.scss */
 hr {
   border: 1px outset rgba(255, 255, 255, 0.2);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -54,17 +55,75 @@ hr {
 }
 
 /* line 1, ../scss/layout/_footer.scss */
-footer {
-  color: #f7f7f7;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  background-color: #d1e0e0;
-  height: 15px;
+.footer {
+  background-color: #222222;
+  position: fixed;
+  bottom: 0px;
+  vertical-align: baseline;
+  width: 100vw;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  color: gray;
 }
 
-/* line 9, ../scss/layout/_footer.scss */
-.footer .navbar {
-  height: 15px;
+/* line 13, ../scss/layout/_footer.scss */
+.footer .footer-navigation {
+  background-color: #222222;
+  margin-left: -120px;
+  position: fixed;
+  height: 60px;
+  width: 180px;
+  left: 50%;
+  z-index: 4001;
+  bottom: 30px;
+  border-radius: 1.5%;
+}
+
+/* line 29, ../scss/layout/_footer.scss */
+nav p {
+  position: relative;
+  font-size: 11px;
+  line-height: 14px;
+  padding-top: 15px;
+  height: 45px;
+  width: 119px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* line 42, ../scss/layout/_footer.scss */
+.button .down {
+  overflow: hidden;
+  border-radius: 0 3px 0 0;
+  height: 60px;
+  width: 60px;
+  right: 0;
+  top: 0;
+  background-attachment: scroll;
+}
+
+/* line 53, ../scss/layout/_footer.scss */
+.button .down span:after {
+  background: transparent no-repeat center;
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  top: 0px;
+  content: ' ';
+}
+
+/* line 64, ../scss/layout/_footer.scss */
+.button.down span {
+  background-image: URL("/img/arrow_down.png");
+  height: 20px;
+  width: 20px;
+  margin: 20px;
+  position: relative;
 }
 
 /* line 1, ../scss/layout/_home.scss */
@@ -81,7 +140,7 @@ footer {
 
 /* line 1, ../scss/layout/_about.scss */
 #about {
-  height: 855px;
+  height: 100%vh;
   display: block;
   background-color: #99ff99;
   background: url("https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg") no-repeat center center fixed;
@@ -162,11 +221,6 @@ footer {
   top: 48px;
 }
 /* line 18, ../scss/modules/_navbar.scss */
-.header .navbar:hover:after {
-  transition: height 0.2s;
-  height: 60px;
-}
-/* line 23, ../scss/modules/_navbar.scss */
 .header .navbar:hover .header-menu {
   top: 27px;
 }
