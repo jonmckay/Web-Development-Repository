@@ -1,0 +1,326 @@
+/* line 1, ../scss/styles.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 8, ../scss/styles.scss */
+h1 {
+  font-size: 50pt;
+  color: #d9d9d9;
+  text-shadow: 2px 2px #000;
+}
+
+/* line 14, ../scss/styles.scss */
+h3 {
+  font-weight: bold;
+}
+
+/* line 18, ../scss/styles.scss */
+.about-picture {
+  border-radius: 50%;
+}
+
+/* line 22, ../scss/styles.scss */
+.about-text {
+  font-size: 12pt;
+}
+
+/* line 26, ../scss/styles.scss */
+.bottom-header-bar {
+  background-color: red;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  transition-property: background-color, height;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1), cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* line 38, ../scss/styles.scss */
+.navbar {
+  transition: height 350ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-property: height;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-delay: initial;
+}
+
+/* line 57, ../scss/styles.scss */
+#home {
+  height: 100vh;
+  display: block;
+  background-color: lightblue;
+  background: url("https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  position: relative;
+}
+
+/* line 69, ../scss/styles.scss */
+#about {
+  height: 100vh;
+  display: block;
+  background-color: #99ff99;
+  background: url("https://41.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+/* line 80, ../scss/styles.scss */
+#portfolio {
+  height: 100vh;
+  background: url("https://41.media.tumblr.com/92e61775d4c3edcc5145936e3703d125/tumblr_nt5uo9fH9y1ud7rr3o1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 86, ../scss/styles.scss */
+#contact {
+  height: 100vh;
+  background: url("https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 93, ../scss/styles.scss */
+#footer {
+  color: #f7f7f7;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background-color: #d1e0e0;
+  height: 150px;
+  position: relative;
+}
+
+/* line 102, ../scss/styles.scss */
+hr {
+  border: 1px outset rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+/* line 108, ../scss/styles.scss */
+.social-buttons li {
+  display: inline;
+  list-style-type: none;
+}
+
+/* line 113, ../scss/styles.scss */
+.btn {
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0 auto 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  /* line 113, ../scss/styles.scss */
+  .btn {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  /* line 130, ../scss/styles.scss */
+  .btn:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  /* line 137, ../scss/styles.scss */
+  .btn:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  /* line 141, ../scss/styles.scss */
+  .btn:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+/* line 147, ../scss/styles.scss */
+.btn:hover {
+  text-decoration: none;
+}
+
+/* line 151, ../scss/styles.scss */
+svg {
+  height: 107%;
+  left: -2px;
+  position: absolute;
+  top: -2px;
+  width: 102%;
+}
+
+/* line 159, ../scss/styles.scss */
+.btn-1 {
+  background: #d2dfdf;
+  font-weight: bold;
+}
+/* line 163, ../scss/styles.scss */
+.btn-1 rect {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  stroke-dasharray: 422, 0;
+}
+
+/* line 171, ../scss/styles.scss */
+.btn-1:hover {
+  background: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+/* line 176, ../scss/styles.scss */
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* line 184, ../scss/styles.scss */
+.portfolio-overlay {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 20%;
+}
+
+/* line 190, ../scss/styles.scss */
+#portfolio .thumbnail {
+  background-color: transparent;
+  margin: 0 0 15px;
+  right: 0;
+  border: 1px outset rgba(255, 255, 255, 0.6);
+}
+
+/* line 197, ../scss/styles.scss */
+#portfolio .thumbnail:hover {
+  transition: 0.5s;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* line 202, ../scss/styles.scss */
+#portfolio .thumbnail .thumbnail-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* line 209, ../scss/styles.scss */
+#portfolio .thumbnail .thumbnail-link .thumbnail-hover {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+}
+
+/* line 220, ../scss/styles.scss */
+#portfolio .thumbnail .thumbnail-link .thumbnail-hover:hover {
+  opacity: 1;
+}
+
+/* line 224, ../scss/styles.scss */
+#portfolio a {
+  background-color: transparent;
+}
+
+/* line 228, ../scss/styles.scss */
+#portfolio .thumbnail .thumbnail-link .thumbnail-hover .thumbnail-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff;
+}
+
+/* line 239, ../scss/styles.scss */
+#portfolio * {
+  z-index: 2;
+}
+
+/* line 243, ../scss/styles.scss */
+#portfolio .thumbnail .caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 25px;
+}
+
+/* line 251, ../scss/styles.scss */
+#portfolio .thumbnail .thumbnail-hover {
+  background-color: blue;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease .5s;
+}
+
+/* line 260, ../scss/styles.scss */
+#portfolio .thumbnail .caption h4, h5 {
+  color: white;
+}
+
+@media (min-width: 855px) {
+  /* line 265, ../scss/styles.scss */
+  #portfolio .thumbnail {
+    margin: 0 0 30px;
+  }
+}
+/* line 270, ../scss/styles.scss */
+.caption h5 {
+  font-style: italic;
+}
+
+/* line 277, ../scss/styles.scss */
+#contact .contact-buttons .contact-btn {
+  display: inline-block;
+  font-size: 13pt;
+  letter-spacing: 2px;
+  background-color: #C0C0C0;
+  padding-top: 10px;
+  padding-left: 0;
+  margin: 15px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+  vertical-align: middle;
+}
+
+/* line 296, ../scss/styles.scss */
+.contact-buttons {
+  list-style-type: none;
+}
+
+/* line 300, ../scss/styles.scss */
+#contact .contact-buttons .contact-btn:hover {
+  color: white;
+  background-color: black;
+  height: 50px;
+  font-size: 14pt;
+}
