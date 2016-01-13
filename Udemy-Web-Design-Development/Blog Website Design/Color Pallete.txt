@@ -1,0 +1,7 @@
+#43474C - Light tiles
+#858C96 - light alt
+#4882B1 - Accent
+#FFFFFF - dark hover
+#ABB2BF - Sidebar hover
+#22272F - Dark Dark
+#636F87 - Dark Borders
