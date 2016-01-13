@@ -55,6 +55,10 @@ ol {
     padding: 20px;
 }
 
+.primary-box h2{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 .secondary-box {
     background-color: #333;
     color: #fff;
@@ -68,5 +72,17 @@ ol {
 
 .secondary-box p em {
     color: #fc3fc3;
+}
+
+/* Styles for the Grouping Selector lecture */
+
+.primary-box, .secondary-box {
+    margin: 30px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    border-bottom: solid 3px red;
+    padding: 0 0 10px;
 }
 
