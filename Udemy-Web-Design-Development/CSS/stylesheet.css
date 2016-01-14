@@ -254,6 +254,11 @@ input[type="submit"]:active {
 
 /* CSS Floats */
 
+p {
+    float: left;
+    width: 300;
+}
+
 #floats {
     background: #d41;
 }
@@ -276,13 +281,28 @@ input[type="submit"]:active {
 }
 
 #mainColumn {
-    width: 350px;
+    width: 250px;
     float: left;
+    background: #555;
+    color: white;
+    padding: 50px;
+    margin-bottom: 20px;
 }
 
 #sidebar {
-    width: 220px;
-    float: right
+    width: 140px;
+    float: right;
+    background: #fc3;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+#footer {
+    clear: both;
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 .clearfix:after {
@@ -290,3 +310,69 @@ input[type="submit"]:active {
     display: table;
     clear: both;
 }
+
+#paragraph1 {
+    clear: right;
+}
+
+/* Positioning Lecture */
+
+#positioning {
+    background: #1b4e5e;
+}
+
+#positioning #container {
+    background: white;
+    padding: 20px;
+    height: 2000px;
+}
+
+#positioning h2 {
+    font-size: 18px;
+}
+
+.box {
+    background: #db4e3e;
+    color: white;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#relative {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#fixed {
+    position: fixed;
+    right: 100px;
+    top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
