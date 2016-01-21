@@ -1,0 +1,80 @@
+/* Jon McKay Blog css */
+
+header {
+    background-color: #2e343d;
+    height: 61px;
+    width: 100%;
+    background: url(img/Header-Bar.png) top no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    z-index: 7;
+    position: absolute;
+    top: 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-navbar a.header-home {
+    border-top: solid 3px;
+    border-color: red;
+}
+
+/* unvisited */
+a:link {
+    color: rgb(253, 253, 253);
+}
+
+/* visited */
+a:visited {
+    color: rgb(253, 253, 253);
+}
+
+/* hovered / mouse-over */
+a:hover {
+    color: #858c96;
+    stroke-width: 5;
+    stroke: black;
+    transition: border 0.3s ease-in-out;
+}
+
+/* active / mouse down */
+a:active {
+    color: black;
+}
+
+.header-navbar {
+    padding: 0;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-navbar ul li {
+    padding-top: 5px;
+    padding-right: 40px;
+    font-size: 16px;
+    font-family: courier, sans-serif;
+    list-style: none;
+    line-height: 1.2;
+    font-weight: bold;
+    display: inline-block;
+    z-index: -1;
+    stroke: black;
+    transition: stroke 0.3s left;
+}
+
+.article-container .article-header img{
+    position: absolute;
+    top: 1000px;
+}
+
+.header-image img {
+    background-image: url(img/pexels-photo.png) top;
+    background-size: cover;
+    width: 100vw;
+}
