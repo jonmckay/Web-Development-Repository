@@ -1,5 +1,14 @@
 /* Jon McKay Blog css */
 
+body {
+    background-color:#22272f;
+}
+
+.body-container{
+    margin: 0 auto;
+    width: 1020px;
+}
+
 header {
     background-color: #2e343d;
     height: 61px;
@@ -18,33 +27,7 @@ a {
     text-decoration: none;
 }
 
-.header-navbar a.header-home {
-    border-top: solid 3px;
-    border-color: red;
-}
-
-/* unvisited */
-a:link {
-    color: rgb(253, 253, 253);
-}
-
-/* visited */
-a:visited {
-    color: rgb(253, 253, 253);
-}
-
-/* hovered / mouse-over */
-a:hover {
-    color: #858c96;
-    stroke-width: 5;
-    stroke: black;
-    transition: border 0.3s ease-in-out;
-}
-
-/* active / mouse down */
-a:active {
-    color: black;
-}
+/* Header Styles */
 
 .header-navbar {
     padding: 0;
@@ -55,8 +38,8 @@ a:active {
 }
 
 .header-navbar ul li {
-    padding-top: 5px;
-    padding-right: 40px;
+    text-align: center;
+    padding: 5px 15px 0;
     font-size: 16px;
     font-family: courier, sans-serif;
     list-style: none;
@@ -64,9 +47,35 @@ a:active {
     font-weight: bold;
     display: inline-block;
     z-index: -1;
-    stroke: black;
-    transition: stroke 0.3s left;
 }
+
+.header-navbar a{
+    border-color: #2e343d;
+    transition: border 0.4s ease-in-out;
+}
+
+/* unvisited */
+.header-navbar a:link {
+    color: rgb(253, 253, 253);
+}
+
+/* visited */
+.header-navbar a:visited {
+    color: rgb(253, 253, 253);
+}
+
+.header-navbar a:hover {
+    border-top: 3px solid #4882B1;
+    color: #858c96;
+    width: 40px;
+}
+
+/* active / mouse down */
+.header-navbar a:active {
+    color: black;
+}
+
+
 
 .article-container .article-header img{
     position: absolute;
@@ -74,7 +83,54 @@ a:active {
 }
 
 .header-image img {
-    background-image: url(img/pexels-photo.png) top;
+    background-image: url(img/pexels-photo.png);
+    width: 1020px;
+    margin: 0 auto;
+    top: 59px;
+    position: absolute;
+}
+
+/* Main content styles */
+
+.article-container {
+    background: url(images/Blog-text-Area.png);
+    position: absolute;
+    top: 350px;
+    width: 679px;
+}
+
+.sidebar {
+    text-align: center;
+    width: 280px;
+    height: 100vh;
+
+    position: absolute;
+    right: 0;
+    top: 350px;
+}
+
+.sidebar .archive-posts {
+    background: url(images/Sidebar-light-Archive.png) top left no-repeat;
     background-size: cover;
-    width: 100vw;
+    height: 523px;
+}
+
+.sidebar .archive-posts {
+    text-align: center;
+}
+
+
+footer {
+    position: absolute;
+    height: 61px;
+    width: 100%;
+    bottom: -450px;
+    left: 0;
+    background-color: #2e343d;
+}
+
+.footer-links ul li{
+    position: absolute;
+    top: 0;
+    right: 0px;
 }
