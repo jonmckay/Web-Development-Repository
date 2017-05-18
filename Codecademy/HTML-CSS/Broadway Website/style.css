@@ -7,6 +7,10 @@ html, body {
   background-color: #333333;
 }
 
+.header .nav li{
+  padding: 10px;
+}
+
 .container {
   max-width: 940px;
   margin: 0 auto;
