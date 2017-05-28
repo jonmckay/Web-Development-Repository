@@ -1,3 +1,17 @@
 * {
 	background-color: #F1E6E0;
 }
+
+.main {
+    margin: 0 auto;
+}
+
+#image {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#img-div {
+    
+}
