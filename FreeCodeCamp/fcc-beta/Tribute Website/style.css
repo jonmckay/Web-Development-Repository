@@ -1,17 +1,46 @@
-* {
-	background-color: #F1E6E0;
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+	background-color: #EEEEEE;
+	width: 100%;
+	display: inline-block;
 }
 
 .main {
     margin: 0 auto;
 }
 
+/* Image/Caption */
+#img-div {
+}
+
 #image {
+    text-align: center;
     width: auto;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
-#img-div {
-    
+/* Tribute Information */
+#tribute-info {
+	background-color: #EEEEEE;
 }
+
+#tribute-info ul {
+	list-style: none;
+	text-align: left;
+}
+
+
