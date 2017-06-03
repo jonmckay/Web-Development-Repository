@@ -1,20 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    text-align: center;
+    min-width: 260px;
+    background-color: #EEEEEE;
 }
 
-body {
-    max-width: 940px;
+#main {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+
 }
 
 /* Header */
 header {
-	background-color: #EEEEEE;
 	width: 100%;
 	display: inline-block;
+}
+
+.header-quote {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 20px;
 }
 
 .main {
@@ -23,24 +35,46 @@ header {
 
 /* Image/Caption */
 #img-div {
+  width: 100%;
+  background-color: white;
 }
 
 #image {
     text-align: center;
-    width: auto;
-    max-width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+}
+
+#img-caption {
+	word-wrap: normal;
+	padding: 16px;
 }
 
 /* Tribute Information */
 #tribute-info {
-	background-color: #EEEEEE;
+	max-width: 940px;
+	margin: auto;
+	text-align: center;
+}
+
+.tribute-info-header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.17em;
+	margin-top: 50px;
+	margin-left: 30px;
 }
 
 #tribute-info ul {
-	list-style: none;
+	max-width: 550px;
+	margin: 0 auto;
 	text-align: left;
+	font-size: 1.17em;
 }
+
+
+
 
 
