@@ -1,3 +1,20 @@
 #main {
-	background-color: black;
+	background-color: #344055;
+}
+
+#img-div {
+	position: center;
+}
+
+#image {
+	display: inline-block;
+	margin-left: 50%;
+}
+
+#img-caption {
+	color: white;
+}
+
+#tribute-link {
+	color: #888098;
 }
