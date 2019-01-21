@@ -3,6 +3,12 @@
 	--img-background-color: #87919E;
 	--link-text-color: #888098;
 	--header-background-color: #707078;
+	--list-items-color: #eef9ea;
+	--info-link-color: #79a2e5;
+}
+
+main {
+	font-family: Helvetica;
 }
 
 body {
@@ -45,8 +51,22 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 20px;
+}
+
+#tribute-info ul {
+	font-family: Helvetica, Arial;
+	color: var(--list-items-color);
+	list-style: none;
+	align-items: left;
+}
+
+h6 {
+	color: var(--list-items-color);
+	align-items: center;
 }
 
 #tribute-link {
-	color: var(--link-text-color);
+	color: var(--info-link-color);
 }
+
